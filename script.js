@@ -93,21 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.transition = 'opacity 1s ease-in-out';
         document.body.style.opacity = '1';
     }, 100);
-
-    // Mobile menu toggle logic
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open');
-        });
-        // Close mobile menu when a link is clicked
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('open');
-            });
-        });
-    }
 });
 
 // Add hover effects to project cards
