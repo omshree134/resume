@@ -3,116 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background: #444;
-            padding: 0.5rem 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        nav a:hover {
-            color: #00b4d8;
-        }
-        .section {
-            margin: 2rem 0;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #444;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #333;
-            color: #fff;
-        }
-        footer a {
-            color: #00b4d8;
-            text-decoration: none;
-        }
-    </style>
+    <title>Om Shree Choudhary - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>OM SHREE CHOUDHARY</h1>
-        <p>Web Developer | Programmer | Problem Solver</p>
-    </header>
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
     <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>A motivated student with strong analytical and problem-solving skills, eager to learn and contribute across diverse fields. Experienced in programming and transitioning from rule-based to AI-driven solutions, with additional interests in data analytics and social network analysis. Adaptable, collaborative, and quick to grasp new concepts, making a valuable addition to any dynamic team.</p>
-        </section>
-        <section id="skills" class="section">
-            <h2>Skills</h2>
+        <button class="menu-toggle" aria-label="Open menu">
+            <span class="menu-icon">&#9776;</span>
+        </button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
             <ul>
-                <li>Languages: HTML, CSS, JavaScript, C, C++, Python</li>
-                <li>Frameworks: NumPy, Pandas, Matplotlib</li>
-                <li>Tools: Git, Excel, PowerPoint, Photoshop</li>
-                <li>Platforms: Visual Studio Code, Jupyter Notebook</li>
-                <li>Soft Skills: Rapport Building, Excellent Communication, People Management</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <section id="projects" class="section">
-            <h2>Projects</h2>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content float">
+            <h1>Om Shree Choudhary</h1>
+            <p>AI & ML Engineering Student | Data Analytics Enthusiast</p>
+            <a href="#about" class="cta-button">Explore My Journey</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate B.E. Computer Science student specializing in AI & ML at RNS Institute of Technology, Bangalore. With a stellar GPA of 9.55, I'm dedicated to leveraging artificial intelligence and data analytics to solve real-world problems.</p>
+                <p>My journey in technology has been marked by hands-on experience in machine learning, data preprocessing, and developing innovative solutions. I thrive on challenges and continuously seek opportunities to expand my knowledge in emerging technologies.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <div class="stat-number">9.55</div>
+                    <div>Current GPA</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">90</div>
+                    <div>WPM Typing Speed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3rd</div>
+                    <div>NTSE Rank</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div>Projects Completed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>💻 Programming Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>🤖 AI/ML Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">BERT</span>
+                    <span class="skill-tag">DistilBERT</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>🛠️ Tools & Platforms</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Visual Studio Code</span>
+                    <span class="skill-tag">Jupyter Notebook</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">FastAPI</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>🎯 Soft Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Leadership</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Public Speaking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>🕸️ Graph-Based Social Network</h3>
+                <p>A sophisticated social networking platform utilizing graph data structures to manage friend connections, mutual relationships, and network analysis through efficient DFS algorithms.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Graph Theory</span>
+                    <span class="tech-tag">DFS</span>
+                    <span class="tech-tag">Data Structures</span>
+                    <span class="tech-tag">Network Analysis</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>🤖 NLP Chatbot</h3>
+                <p>Advanced chatbot with intent classification, sentiment analysis, and context-aware responses using transformer models like BERT and DistilBERT for enhanced user interaction.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">BERT</span>
+                    <span class="tech-tag">NLP</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>🌐 Personal Portfolio Website</h3>
+                <p>A clean, responsive portfolio website showcasing skills, projects, and achievements with modern web technologies and user-friendly design principles.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Professional Experience</h2>
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="experience-title">AI & Data Analytics Intern</div>
+                    <div>Edunet Foundation × AICTE × Shell</div>
+                </div>
+                <div class="experience-date">Jan 2025 - Feb 2025</div>
+            </div>
             <ul>
-                <li><strong>Graph-Based Social Network:</strong> Built using C++ to analyze and visualize relationships. | <a href="https://github.com/omshree134/socialnetwork" target="_blank">Link</a></li>
-                <li><strong>Chatbot Development:</strong> Transitioned from rule-based to NLP-based chatbots for enhanced user interaction. | <a href="https://github.com/omshree134/chatbot" target="_blank">Link</a></li>
-                <li><strong>Resume Website:</strong> Personal portfolio designed using HTML and CSS. | <a href="https://omshree134.github.io/resume/" target="_blank">Link</a></li>
-            </ul>            
-        </section>
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto: omshreechoudhary7@gmail.com">omshreechoudhary7@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/om-shree" target="_blank">linkedin.com/in/om-shree</a></p>
-            <p>GitHub: <a href="https://github.com/omshree134" target="_blank">github.com/omshree134</a></p>
-        </section>
-    </div>
-    <footer>
-        <p>Thanks for checking out my profile!<p>
-    </footer>
+                <li>Successfully completed intensive 4-week internship under the Skills4Future program</li>
+                <li>Developed CNN model for plastic waste classification with advanced preprocessing techniques</li>
+                <li>Applied data analytics for sustainable development and green skills initiatives</li>
+                <li>Utilized TensorFlow and Python for model development and optimization</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2>Achievements & Recognition</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <h3>Top 10 Hackathons</h3>
+                <p>Consistently placed in top 10 across multiple competitive hackathons</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">⚡</div>
+                <h3>90 WPM Typing</h3>
+                <p>Exceptional typing proficiency with 95% accuracy</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🥉</div>
+                <h3>NTSE 3rd Rank</h3>
+                <p>National Talent Search Examination achievement</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🎤</div>
+                <h3>Public Speaker</h3>
+                <p>Regular presentations at orientations and NSS events</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Let's Connect</h2>
+        <div class="contact-content">
+            <p>Ready to collaborate on exciting projects or discuss opportunities in AI and ML?</p>
+            <div class="contact-links">
+                <a href="mailto:omshreechoudhary7@gmail.com" class="contact-link">📧 Email Me</a>
+                <a href="https://www.linkedin.com/in/om-shree" class="contact-link" target="_blank">💼 LinkedIn</a>
+                <a href="https://www.github.com/omshree134" class="contact-link" target="_blank">🐙 GitHub</a>
+                <a href="tel:+918509376661" class="contact-link">📱 Call Me</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
